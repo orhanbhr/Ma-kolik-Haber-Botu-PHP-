@@ -6,7 +6,7 @@
 
 	#print_r($haberler);
 
-	for($h=0; $h < 3; $h++){
+	for($h=0; $h < count($haberler[0]); $h++){
 
 		// Parçalamalar
 		preg_match_all('#<div class="news-img-transp">(.*?)</div>#Ssie',$haberler[0][$h],$title);
